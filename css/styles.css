@@ -44,6 +44,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Nav site */
 .site-nav .link {
   color: var(--primary-black-color);
