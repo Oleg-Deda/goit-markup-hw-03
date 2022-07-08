@@ -62,9 +62,20 @@ ol {
 
 .header {
   background-color: #ccc;
+  height: 80px;
+  border-bottom: solid #ececec;
 }
 
 .header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-contacts-nav {
   display: flex;
 }
 .logo {
@@ -75,6 +86,10 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: flex;
+  margin-right: 93px;
+  margin-left: 215px;
+  
 }
 
 .logo-word {
@@ -86,6 +101,11 @@ ol {
   letter-spacing: 0.03em;
 }
 
+.header-nav {
+  margin-right: auto;
+  display: block;
+}
+
 /* Nav site */
 .header-list .header-link {
   color: var(--primary-black-color);
@@ -94,18 +114,32 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-link {
+  margin-right: 50px;
+}
 
-.header-list .link:hover,
-.header-list .link:focus {
+/* .header-link:last-child { */
+  margin-right: 0;
+}
+
+.header-list :hover,
+.header-list :focus {
   color: var(--accent-color);
 }
 
-.header-list .link.current {
+.header-list .current {
   color: var(--accent-color);
+}
+
+.header-mail {
+  margin-right: 50px;
+}
+.header-header-phone {
+  margin-right: 215px;
 }
 
 /* Nav contacts  */
-.header-contacts-nav .header-link {
+.header-contacts-nav {
   color: var(--description-color);
   font-weight: 500;
   font-size: 14px;
