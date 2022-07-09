@@ -156,7 +156,7 @@ ol {
 
 /* Section Hero*/
 
-.hero-container > .hero-title {
+.hero-container > {
   display: flex;
   align-items: center;
 }
@@ -165,18 +165,20 @@ ol {
   background-color: #ccc;
   border-bottom: solid #ececec;
   background-color: var(--bg-darkgrey-color);
-  text-align: center;
 }
 
 .hero-title {
   color: var(--primary-white-color);
   background-color: var(--bg-darkgrey-color);
   font-weight: 900;
+  display: block;
   font-size: 44px;
   line-height: 1.4;
+  width: 696px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 30px;
   outline: 2px solid red;
   outline-offset: -2px;
@@ -189,8 +191,6 @@ ol {
   display: flex;
   border-radius: 4px;
   padding: 10px 32px;
-
-  min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -199,10 +199,11 @@ ol {
   align-items: center;
   letter-spacing: 0.06em;
   margin: 0 auto;
+  margin-bottom: 200px;
 }
 
-.button:hover,
-.button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
