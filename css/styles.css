@@ -155,7 +155,15 @@ ol {
 }
 
 /* Section Hero*/
+
+.hero-container > .hero-title {
+  display: flex;
+  align-items: center;
+}
+
 .hero {
+  background-color: #ccc;
+  border-bottom: solid #ececec;
   background-color: var(--bg-darkgrey-color);
   text-align: center;
 }
@@ -165,25 +173,32 @@ ol {
   background-color: var(--bg-darkgrey-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .hero-button {
-  display: inline-block;
+  max-width: 250px;
+  min-width: 200px;
+  max-height: 50px;
+  display: flex;
   border-radius: 4px;
   padding: 10px 32px;
+
   min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
 }
 
 .button:hover,
