@@ -1,20 +1,23 @@
 :root {
   /* Color */
-  --primary-black-color: #212121;
-  --description-color: #757575;
+  --primary-color: #757575;
+  --secondary-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --bg-darkgrey-color: #2f303a;
   --bg-light-gray-color: #f5f4fa;
   /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
 }
-
+/* --primary-color: #212121;  */
+/* --description-color: #757575; */
 body {
-  color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font-family);
+  color: var(--primary-color);
+  letter-spacing: 0.03em;
 }
-/* Частковий ресет стилей браузера */
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -35,7 +38,7 @@ ol {
   padding: 0;
   margin: 0;
 }
-/* Частковий ресет стилей браузера */
+
 .list {
   list-style: none;
   cursor: pointer;
@@ -47,23 +50,21 @@ ol {
   text-decoration: none;
   color: currentColor;
 }
-/* Reset styles */
 
 /* Base styles */
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
 .header {
-  background-color: #ccc;
-  height: 80px;
-  border-bottom: solid #ececec;
+  /* background-color: #ccc; */
+  /* height: 80px; */
+  /* border-bottom: solid #ececec; */
 }
 
 .header-container {
@@ -95,33 +96,28 @@ ol {
 .logo-accent {
   color: #212121;
 }
+.border {
+  border: #ececec 1px;
+}
 
 .header-nav {
   margin-right: auto;
-  display: block;
+  /* display: block; */
 }
 
 /* Nav site */
 .header-list .header-link {
-  color: var(--primary-black-color);
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px;
+  /* padding: 32px; */
   display: block;
 }
 .header-list {
   gap: 50px;
 }
-
-/* .header-link { */
-/* margin-right: 50px; */
-/* } */
-
-/* .header-link:last-child { */
-/* margin-right: 0; */
-/* } */
 
 .header-list :hover,
 .header-list :focus {
@@ -133,15 +129,17 @@ ol {
 }
 
 .header-mail {
-  padding: 32px;
-  /* margin-right: 50px; */
+  padding: 32px 0;
+  margin-right: 50px;
 }
 .header-phone {
-  padding: 32px;
+  padding: 32px 0;
 }
 
 /* Nav contacts  */
-.header-contacts-nav {
+.header-contacts-nav,
+.header-mail,
+.header-phone {
   color: var(--description-color);
   font-weight: 500;
   font-size: 14px;
@@ -156,37 +154,37 @@ ol {
 
 /* Section Hero*/
 
-.hero-container > {
+.hero-container > hero {
   display: flex;
   align-items: center;
 }
 
 .hero {
-  background-color: #ccc;
-  border-bottom: solid #ececec;
+  padding: 200px 0;
+  /* display: flex; */
+  align-items: center;
+  /* background-color: #ccc; */
+  /* border-bottom: solid #ececec; */
   background-color: var(--bg-darkgrey-color);
+  color: var(--primary-white-color);
 }
 
 .hero-title {
-  color: var(--primary-white-color);
-  background-color: var(--bg-darkgrey-color);
   font-weight: 900;
-  display: block;
   font-size: 44px;
-  line-height: 1.4;
   width: 696px;
   text-align: center;
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.06em; */
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red; */
+  /* outline-offset: -2px; */
 }
 
 .hero-button {
-  max-width: 250px;
   min-width: 200px;
+  max-width: 250px;
   max-height: 50px;
   display: flex;
   border-radius: 4px;
@@ -210,7 +208,7 @@ ol {
 
 /* Features */
 .features-item-title {
-  color: var(--primary-black-color);
+  color: var(--secondary-color);
   /* text-decoration: none; */
   font-weight: 700;
   font-size: 14px;
@@ -228,7 +226,7 @@ ol {
 
 /* About */
 .about-title {
-  color: var(--primary-black-color);
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -242,7 +240,7 @@ ol {
 }
 
 .team-title {
-  color: var(--primary-black-color);
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -251,7 +249,7 @@ ol {
 }
 
 .team-uppertitle {
-  color: var(--primary-black-color);
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -259,7 +257,7 @@ ol {
   letter-spacing: 0.03em;
 }
 .team-item-title {
-  color: var(--description-color);
+  color: var(--primary-color);
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
