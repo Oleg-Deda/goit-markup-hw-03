@@ -160,11 +160,11 @@ ol {
 }
 
 .hero {
-  padding: 200px 0;
-  /* display: flex; */
+  /* padding: 200px 0; */
+  display: flex;
   align-items: center;
   /* background-color: #ccc; */
-  /* border-bottom: solid #ececec; */
+  border-bottom: solid #ececec;
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
 }
@@ -178,6 +178,7 @@ ol {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+  background-color: tomato;
   /* outline: 2px solid red; */
   /* outline-offset: -2px; */
 }
@@ -207,9 +208,15 @@ ol {
 }
 
 /* Features */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-item-title {
   color: var(--secondary-color);
   /* text-decoration: none; */
+  margin-bottom: 10px;
+  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
