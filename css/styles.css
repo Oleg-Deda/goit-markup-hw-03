@@ -270,24 +270,32 @@ img {
 }
 
 .team-card-descr {
-  padding: 30px 0;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 10px;
 }
 
 /* Footer */
-.footer {
+.footer:not(.logo) {
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
+  padding: 60px;
+  padding-bottom: 60px;
+  /* margin-bottom: 20px; */
 }
 
 .footer-logo {
   color: var(--accent-color);
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
 }
 .footer-logo-accent {
   color: var(--primary-white-color);
@@ -295,29 +303,30 @@ img {
 
 .footer-list {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
-
+.footer-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
 .adress-link:hover,
 .adress-link:focus {
   color: var(--accent-color);
 }
 .footer-adress {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   font-style: normal;
 }
+.adress-link {
+  padding-bottom: 60px;
+}
 
-/* Portfolio */
-/* .work-btn-list { */
-/* background-color: var(--bg-light-gray-color); */
-/* color: var(--primary-text-color); */
-/* } */
+/* Portfolio   */
+.work-btn-list {
+  background-color: var(--bg-light-gray-color);
+  color: var(--primary-text-color);
+}
 
 .work-btn-item {
   font-family: 'Roboto', sans-serif;
