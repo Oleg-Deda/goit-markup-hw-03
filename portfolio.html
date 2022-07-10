@@ -13,12 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Normalize style -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
-    <!-- Custom style -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -29,8 +27,8 @@
         <a class="header logo" href="" lang="en">Web<span class="logo-accent">Studio</span></a>
         <nav class="header-nav">
           <ul class="list header-list">
-            <li><a class="header-link current" href="./index.html">Студия</a></li>
-            <li><a class="header-link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="header-link" href="./index.html">Студия</a></li>
+            <li><a class="header-link current" href="./portfolio.html">Портфолио</a></li>
             <li><a class="header-link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
@@ -52,117 +50,135 @@
         <div class="container">
           <!-- Hiden title -->
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="work-btn list">
-            <li><button type="button" class="work-btn-item current">Все</button></li>
-            <li><button type="button" class="work-btn-item">Веб-сайты</button></li>
-            <li><button type="button" class="work-btn-item">Приложения</button></li>
-            <li><button type="button" class="work-btn-item">Дизайн</button></li>
-            <li><button type="button" class="work-btn-item">Маркетинг</button></li>
+          <!-- Filter -->
+          <ul class="filter list">
+            <li><button class="btn" type="button">Все</button></li>
+            <li><button class="btn" type="button">Веб-сайты</button></li>
+            <li><button class="btn" type="button">Приложения</button></li>
+            <li><button class="btn" type="button">Дизайн</button></li>
+            <li><button class="btn" type="button">Маркетинг</button></li>
           </ul>
-        </div>
-        <div class="container">
-          <ul class="list">
-            <li>
-              <a class="link" href="#">
+
+          <ul class="project list">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/сайт_технокряк.jpg"
                   width="370"
                   height="294"
                   alt="на экране ноутбука изображения людей"
                 />
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/дизайн_постера.jpg"
                   width="370"
                   height="294"
                   alt="на постере 2 мужчины играют в баскетбол"
                 />
-                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/ресторан.jpg"
                   width="370"
                   height="294"
                   alt="на логотипе ресторана изображена рыба"
                 />
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-text">Приложение</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/проэкт_прайм.jpg"
                   width="370"
                   height="294"
                   alt="наушники"
                 />
-                <h2 class="portfolio-title">Проект Prime</h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Проект Prime</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/проект_коробки.jpg"
                   width="370"
                   height="294"
                   alt="две коробки"
                 />
-                <h2 class="portfolio-title">Проект Boxes</h2>
-                <p class="portfolio-text">Приложение</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Проект Boxes</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img src="./images/studio/Inspiration.jpg" width="370" height="294" alt="монитор" />
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/издание.jpg"
                   width="370"
                   height="294"
                   alt="книжка с рисунками"
                 />
-                <h2 class="portfolio-title">Издание Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Издание Limited Edition</h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/проект_лаб.jpg"
                   width="370"
                   height="294"
                   alt="ярлык с логотипом"
                 />
-                <h2 class="portfolio-title">Проект LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a class="link" href="#">
+            <li class="project-cards item">
+              <a class="cards-link" href="#">
                 <img
                   src="./images/studio/развивающийся_бизнес.jpg"
                   width="370"
                   height="294"
                   alt="на ноутбуке работает человек"
                 />
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-text">Приложение</p>
+                <div class="card-descr">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
