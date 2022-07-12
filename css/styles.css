@@ -13,6 +13,7 @@
   --filter-indent: 8px;
   --main-font-family: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
+  --items: 3;
 }
 
 body {
@@ -82,8 +83,8 @@ img {
   margin-right: 93px;
 }
 .logo {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  /* margin-top: 25px; */
+  /* margin-bottom: 25px; */
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -99,12 +100,16 @@ img {
 }
 
 /* Nav site */
-.header-list .header-link {
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-list {
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  display: block;
 }
 .header-list {
   display: flex;
@@ -145,7 +150,7 @@ img {
 
 /* Section Hero*/
 
-.hero {
+.hero-section {
   padding: 200px 0;
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
@@ -288,8 +293,7 @@ img {
 .footer:not(.logo) {
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
-  padding: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -327,7 +331,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  margin-bottom: 9px;
 }
 .adress-link {
   padding-bottom: 60px;
@@ -369,6 +372,13 @@ img {
   gap: var(--indent);
 }
 
+.project-cards.item {
+  --items: 3;
+}
+
+.item {
+  flex-basis: calc((100% - var (--indent) * (var(--items) -1)) / var(--items));
+}
 .project-text {
   color: var(--secondary-color);
 }
@@ -378,6 +388,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
   letter-spacing: 0.06em;
 }
 .project-text {
@@ -388,5 +399,7 @@ img {
 
 .card-descr {
   padding: 20px 24px;
+  padding-top: 0;
   border: 1px solid var(--card-border);
+  border-top: 0px;
 }
